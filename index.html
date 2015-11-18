@@ -1,99 +1,27 @@
-
 <!DOCTYPE html>
 <html>
-    
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>
-        </title>
-        <link href="../../imagenes/genericas/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-
-<script src='phonegap.js'></script>
-        <link rel="stylesheet" href="jquery.mobile-1.3.0.min.css" />
-		<script src="./1.8.2.js"></script>
-		<script src="./1.3.0.js"></script>
-
-
-		<!--
-		<link rel="stylesheet" href="../../css/jquery_mobile/jquery.mobile-1.3.0.min.css" />
-		<script src="../../js/jquery_mobile/jquery-1.8.2.min.js"></script>
-		<script src="../../js/jquery_mobile/jquery.mobile-1.3.0.min.js"></script>
-
-
-
-        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.1.1/jquery.mobile-1.1.1.min.css"/>
-        <link rel="stylesheet" href="my.css" />
-        <style>
-            /* App custom styles */
-        </style>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">
-        </script>
-        <script src="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.1.1/jquery.mobile-1.1.1.min.js">
-        </script>
-        <script src="my.js">
-        </script>
-        -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		<!--<script src='phonegap.js'></script>-->
     </head>
-    
     <body>
-        <!-- Home -->
-        <div data-role="page" id="page1">
-        	
-            <div data-theme="a" data-role="header">
-				<a href="../ruta/ruta.php" data-icon="home" data-iconpos="notext" rel="external">Home</a>
-                <h3>Etapa 1</h3>
-                <!-- navbar 
-                <div data-role="navbar">
-					<ul>
-				
-					</ul>
-				</div>
-				<!-- /navbar -->
-            </div>
-            
-            <div data-role="content">
-	            <form name="frm_etapa1" id="frm_etapa1"  method="post" action="../../control/ruta/proceso_alta_etapa1.php?id=<?php echo $id_ruta;?>" data-ajax="false">
-	          
-					<input type="hidden" name="id_visita" id="id_visita" value="" />
-					<input type="hidden" name="etapa1" id="etapa1" value="" />
-					<input type="hidden" name="latitud" id="latitud" />
-					<input type="hidden" name="longitud" id="longitud" />
-	            
-	            	<h3>GASTOS</h3>
-	            	<fieldset>
-						<label for="monto">Monto de pasajes</label> 
-		                <input type="text" name="monto" id="monto"  class="monto solo_numeros" value="" />
-					</fieldset>
-					
-					
-					<fieldset data-role="controlgroup">
-						<input type="checkbox" name="transporte[]" class="transporte" id="transporte1" value="1" />
-                		<label for="transporte1">Cami&oacute;n</label> 
-						<input type="checkbox" name="transporte[]" class="transporte" id="transporte2" value="2"   />
-                		<label for="transporte2">Metro</label> 
-                		<input type="checkbox" name="transporte[]" class="transporte" id="transporte3" value="3"  />
-                		<label for="transporte3">Otro</label> 
-					</fieldset> 
-
-
-					
-                    
-                    <h3>1. ESTABLECIMIENTO</h3>
-	            	
-					
-					<label for="proyecto" class="select">1. En caso de encontrar el establecimiento cerrado, indicar el motivo:</label>
-					
- 
-					<h3>2. INSPECCI&Oacute;N VISUAL</h3>
-					<label>1. &iquest;Cuenta con alguna calcoman&iacute;a de DescluB?</label>
-					<fieldset data-role="controlgroup">
-						<input type="radio" name="calcomania_desclub" id="calcomania_desclub1"  class="calcomania_desclub bloquea_radio" value="0" />
-		                <label for="calcomania_desclub1">No</label>
-						<input type="radio" name="calcomania_desclub" id="calcomania_desclub2" class="calcomania_desclub bloquea_radio" value="1" />
-		                <label for="calcomania_desclub2">Si</label>   
-					</fieldset>
-					
+     
+        <div data-role="page" >
+			<div data-role='header'>
+				<h1>Cabecera</h1>
+			</div>
+           <div data-role='content'>
+					<h1>Contenido</h1>
+			</div>
+			<div data-role='footer'>
+					<h1>footer</h1>
+			</div>
+	
+		</div>
     </body>
 
 </html>

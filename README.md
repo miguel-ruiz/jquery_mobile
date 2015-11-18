@@ -1,2 +1,0 @@
-# jquery_mobile
-jquery
