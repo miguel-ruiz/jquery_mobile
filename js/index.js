@@ -4,7 +4,8 @@ $( document ).ready(function() {
 	var datosUsuario = $("#nombredeusuario").val()
 	var datosPassword = $("#clave").val()
 	
-  	archivoValidacion = "http://www.grupomedios.com/intranet/validacion_datos.php?jsoncallback=?"
+  	//archivoValidacion = "http://www.grupomedios.com/intranet/validacion_datos.php?jsoncallback=?"
+	archivoValidacion = "http://revolucion.mobi/ejemplos/phonegap/envioFormulario/validacion_de_datos.php?jsoncallback=?"
 	$.getJSON( archivoValidacion, { usuario:datosUsuario ,password:datosPassword})
 	.done(function(respuestaServer) {
 		
