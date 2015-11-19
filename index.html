@@ -50,28 +50,27 @@
 	var datosUsuario = $("#nombredeusuario").val()
 	var datosPassword = $("#clave").val()
 	
-  	//archivoValidacion = "http://www.grupomedios.com/intranet/validacion_datos.php?jsoncallback=?"
-	archivoValidacion = "http://revolucion.mobi/ejemplos/phonegap/envioFormulario/validacion_de_datos.php?jsoncallback=?"
-	$.getJSON( archivoValidacion, { usuario:datosUsuario ,password:datosPassword})
-	.done(function(respuestaServer) {
+  	archivoValidacion = "http://www.grupomedios.com/intranet/validacion_datos.php?jsoncallback=?"
+	//archivoValidacion = "http://revolucion.mobi/ejemplos/phonegap/envioFormulario/validacion_de_datos.php?jsoncallback=?"
+		//archivoValidacion = "./validacion_datos.php?jsoncallback=?"
+	$.getJSON( archivoValidacion, {usuario:datosUsuario ,password:datosPassword})
+	.done(function(respuestaServer) {		
 		
-		alert(respuestaServer.mensaje + "\nGenerado en: " + respuestaServer.hora + "\n" +respuestaServer.generador)
-		
-		if(respuestaServer.validacion == "ok"){
-		  
+		if(respuestaServer.mensaje == "Validacion Correcta"){
 		 	/// si la validacion es correcta, muestra la pantalla "home"
-			$.mobile.changePage("#home")
-		  
+			$.mobile.changePage("#home", {
+  transition: "pop",
+  reverse: false,
+  changeHash: false
+});
+			//alert('Siguete');
 		}else{
-		  
-		  /// ejecutar una conducta cuando la validacion falla
+		alert(respuestaServer.mensaje)
 		}
-  
 	})
 	return false;
 })
 </script>
-
 </body>
 </html>
 </html>
