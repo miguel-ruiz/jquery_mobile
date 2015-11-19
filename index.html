@@ -59,10 +59,10 @@
 		if(respuestaServer.mensaje == "Validacion Correcta"){
 		 	/// si la validacion es correcta, muestra la pantalla "home"
 			$.mobile.changePage("#home", {
-  transition: "pop",
-  reverse: false,
-  changeHash: false
-});
+			  transition: "pop",
+				reverse: false,
+				  changeHash: false
+				});
 			//alert('Siguete');
 		}else{
 		alert(respuestaServer.mensaje)
